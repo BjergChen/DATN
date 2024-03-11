@@ -24,11 +24,11 @@ spring:
     allow-bean-definition-overriding: true
   # datasource
   datasource:
-    url: jdbc:oracle:thin:@//172.20.20.67:1521/dbdev
-    username: CSKV_REPORT
-    password: CSKV_REPORT
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    name: report-datasource
+    url: jdbc:sqlserver://localhost:1433;database=SCORPIO
+    username: sa
+    password: 123456
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    name: SQL Scorpio
     maximum-pool-size: 1000
     minimum-idle: 20
     max-lifetime: 1800000
