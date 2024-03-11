@@ -28,7 +28,7 @@ import java.util.Arrays;
         entityManagerFactoryRef = "entityManagerFactory",
         transactionManagerRef = "transactionManager",
         basePackages = {
-                "vn.teca.cskv.base.repository"
+                "vn.teca.scopio.base.repository"
         }
 )
 public class DatabaseConfiguration {
@@ -77,7 +77,7 @@ public class DatabaseConfiguration {
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(EntityManagerFactoryBuilder builder, @Qualifier("dataSource") DataSource dataSource) {
         return builder
                 .dataSource(dataSource)
-                .packages("vn.teca.cskv.base.model")
+                .packages("vn.teca.scopio.base.model")
                 .persistenceUnit("persistenUnitName")
                 .build();
     }
