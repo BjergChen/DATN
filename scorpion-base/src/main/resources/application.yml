@@ -29,12 +29,12 @@ spring:
     password: 123456
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     name: SQL Scorpio
-    maximum-pool-size: 1000
-    minimum-idle: 20
-    max-lifetime: 1800000
-    idle-timeout: 180000
-    connection-timeout: 50000
-    pool-name: report-HikariCP
+#    maximum-pool-size: 1000
+#    minimum-idle: 20
+#    max-lifetime: 1800000
+#    idle-timeout: 180000
+#    connection-timeout: 50000
+#    pool-name: report-HikariCP
   # jpa
   jpa:
     show-sql: false
