@@ -42,15 +42,15 @@ spring:
       hibernate.format_sql: false
 
 # eureka
-eureka:
-  client:
-    service-url:
-      defaultZone: http://scopio:scopio2024@localhost:8001/eureka/
-  instance:
-    health-check-url-path: /actuator/health
-    metadata-map:
-      startup: ${random.int}
-    prefer-ip-address: true
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://scopio:scopio2024@localhost:8001/eureka/
+#  instance:
+#    health-check-url-path: /actuator/health
+#    metadata-map:
+#      startup: ${random.int}
+#    prefer-ip-address: true
 
 # management
 management:
