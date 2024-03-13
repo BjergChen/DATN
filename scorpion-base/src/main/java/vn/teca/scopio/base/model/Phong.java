@@ -28,7 +28,7 @@ public class Phong {
     private Integer id;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne
     @JoinColumn(name = "loai_phong_Id_loai_phong", nullable = false)
     private LoaiPhong loaiPhongIdLoaiPhong;
 
