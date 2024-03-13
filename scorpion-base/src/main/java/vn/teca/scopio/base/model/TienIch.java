@@ -1,7 +1,11 @@
 package vn.teca.scopio.base.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
@@ -13,6 +17,11 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
+
 @Table(name = "tien_ich")
 public class TienIch {
     @Id
@@ -26,7 +35,8 @@ public class TienIch {
     @Column(name = "ten_tien_ich", nullable = false, length = 100)
     private String tenTienIch;
 
-    @OneToMany(mappedBy = "tienIchIdTienIch")
-    private Set<TienIchLoaiPhong> tienIchLoaiPhongs = new LinkedHashSet<>();
+//    @OneToMany(mappedBy = "tienIchIdTienIch")
+//    private Set<TienIchLoaiPhong> tienIchLoaiPhongs = new LinkedHashSet<>();
+
 
 }
