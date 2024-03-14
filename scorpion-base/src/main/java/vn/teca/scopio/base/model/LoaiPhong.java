@@ -1,7 +1,11 @@
 package vn.teca.scopio.base.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
@@ -9,9 +13,14 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
 
+
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
 @Getter
 @Setter
-@Entity
 @Table(name = "loai_phong")
 public class LoaiPhong {
     @Id

@@ -1,16 +1,24 @@
 package vn.teca.scopio.base.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+@Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+@Builder
 @Getter
 @Setter
-@Entity
 @Table(name = "tai_khoan_nv")
 public class TaiKhoanNv {
     @Id
@@ -18,7 +26,7 @@ public class TaiKhoanNv {
     private Integer id;
 
     @NotNull
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne
     @JoinColumn(name = "quyen_han_id_quyen_han", nullable = false)
     private QuyenHan quyenHanIdQuyenHan;
 
