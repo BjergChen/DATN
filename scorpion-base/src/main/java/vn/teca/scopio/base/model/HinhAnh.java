@@ -1,5 +1,6 @@
 package vn.teca.scopio.base.model;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import javax.validation.constraints.NotNull;
 @Getter
 @Setter
 @Entity
+@Builder
 @Table(name = "hinh_anh")
 public class HinhAnh {
     @Id

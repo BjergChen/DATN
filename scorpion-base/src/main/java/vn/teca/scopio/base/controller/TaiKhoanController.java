@@ -41,7 +41,7 @@ public class TaiKhoanController {
     public ResponseEntity<?>getone(@PathVariable int id){
         return ResponseEntity.ok(thongTinKhachDatServices.detail(id));
     }
-    @GetMapping("/khach-hang/hien-thi-list")
+    @GetMapping("/khach-hang/hien-thi")
     public ResponseEntity<?> getallnv(){
         return ResponseEntity.ok(taiKhoanNVService.getall());
     }
