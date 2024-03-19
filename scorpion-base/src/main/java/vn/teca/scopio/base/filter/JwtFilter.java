@@ -11,7 +11,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
-import vn.teca.scopio.base.model.login.UserDTO;
+import vn.teca.scopio.base.model.authentication.UserDTO;
 import vn.teca.scopio.base.util.JwtTokenUtil;
 
 import javax.servlet.FilterChain;

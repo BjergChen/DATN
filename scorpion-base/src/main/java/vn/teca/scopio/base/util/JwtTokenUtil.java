@@ -8,7 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
-import vn.teca.scopio.base.model.login.UserDTO;
+import vn.teca.scopio.base.model.authentication.UserDTO;
 
 import java.io.Serializable;
 import java.util.*;

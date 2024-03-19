@@ -43,5 +43,4 @@ public class phongController {
         return ResponseEntity.ok(phongServices.locLoaiPhong(id));
     }
 
-
 }
